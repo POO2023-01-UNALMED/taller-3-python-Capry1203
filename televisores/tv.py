@@ -1,18 +1,18 @@
 class TV:
 #+++++++++ metodo contador +++++++++++++++++++
-    numTV = 0
+    _numTV = 0
     @classmethod
     def getNumTV(cls):
-        return TV._numTV
+        return cls._numTV
     @classmethod
     def setNumTV(cls,num0):
-        TV._numTV = num0
+        cls._numTV = num0
 #++++++++++ init y constructor ++++++++++++
     def __init__(self, marca, estado):
         self._marca = marca; self._estado = estado
         self._canal = 1; self._precio = 500
         self._volumen = 1; self._control = None
-        TV.numTV += 1
+        TV._numTV += 1
 #++++++++ metodos de acceso +++++++++++++++++
     def getMarca(self):
         return self._marca
