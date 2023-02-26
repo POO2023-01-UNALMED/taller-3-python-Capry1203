@@ -49,10 +49,10 @@ class TV:
         self._control = control
 #+++++++++++ encedido y apagado +++++++++++++++++
     def turnOn(self):
-        self._estado == True
+        self._estado = True
     def turnOff(self):
-        self._estado == False
-        
+        self._estado = False
+
     def getEstado(self):
         return self._estado
 #++++++++++ Cambio de Canal ++++++++++++++++++++
