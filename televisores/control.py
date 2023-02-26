@@ -3,9 +3,9 @@ class Control:
     def __init__(self):
         self._tv = None
     
-    def getTV(self):
+    def getTv(self):
         return self._tv
-    def setTV(self, tv):
+    def setTv(self, tv):
         self._tv = tv
 #++++++++ metodos de acceso para el TV +++++++++
     def canalUp(self):
@@ -20,7 +20,7 @@ class Control:
 
     def volumenUp(self):
         self._tv.volumenUp()
-    def volumen(self):
+    def volumenDown(self):
         self._tv.volumenDown()
     
     def setCanal(self, num5):
